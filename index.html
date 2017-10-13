@@ -1,0 +1,35 @@
+<!doctype html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="gift.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body>
+    <div style="color:{{mainColor}}">aa {{message}} {{products[0].name}} </div>
+
+    <h1>All Products</h1>
+    <ul>
+        <li  repeat="{{product in products}}"  class="hi">
+            <a href="product.html?id={{product.id}}" style="color:{{product.color}}" if="{{product.visible}}">{{product.name}}</a>
+        </li>
+    </ul>
+<!-- 
+    <ul>
+        <li {{for page in pages}}>{{page.name}}
+
+        </li>
+    </ul> -->
+    <ul>
+        <li repeat="{{page in pages}}">{{page.name}}
+            <ul>
+                <li repeat="{{tag in page.tags}}">{{tag}}</li>
+            </ul>
+        </li>
+    </ul>
+    <span if="{{pinned}}">Pin</span>
+    <span if="{{!pinned}}">Pin</span>
+
+
+</body>

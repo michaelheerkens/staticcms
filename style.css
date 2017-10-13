@@ -1,0 +1,31 @@
+.title {
+    color:rgb(16, 70, 114)
+}
+h1 {
+    font-size: 24px;
+    color: #333
+}
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+ul.col {
+    column-count: 4;
+}
+ul li {
+    list-style: none;
+    color:rgb(16, 70, 114);
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    padding-bottom: 5px
+}
+
+li a {
+    color:rgb(16, 70, 114);
+    text-decoration: none
+}
+
+li a:hover {
+    text-decoration: underline
+}
